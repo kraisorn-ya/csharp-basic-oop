@@ -1,0 +1,15 @@
+C:\Users\kdungprasong\source\repos\BasicOOP\BasicOOP\bin\Debug\netcoreapp3.1\BasicOOP.exe
+C:\Users\kdungprasong\source\repos\BasicOOP\BasicOOP\bin\Debug\netcoreapp3.1\BasicOOP.deps.json
+C:\Users\kdungprasong\source\repos\BasicOOP\BasicOOP\bin\Debug\netcoreapp3.1\BasicOOP.runtimeconfig.json
+C:\Users\kdungprasong\source\repos\BasicOOP\BasicOOP\bin\Debug\netcoreapp3.1\BasicOOP.runtimeconfig.dev.json
+C:\Users\kdungprasong\source\repos\BasicOOP\BasicOOP\bin\Debug\netcoreapp3.1\BasicOOP.dll
+C:\Users\kdungprasong\source\repos\BasicOOP\BasicOOP\bin\Debug\netcoreapp3.1\BasicOOP.pdb
+C:\Users\kdungprasong\source\repos\BasicOOP\BasicOOP\obj\Debug\netcoreapp3.1\BasicOOP.csprojAssemblyReference.cache
+C:\Users\kdungprasong\source\repos\BasicOOP\BasicOOP\obj\Debug\netcoreapp3.1\BasicOOP.Form1.resources
+C:\Users\kdungprasong\source\repos\BasicOOP\BasicOOP\obj\Debug\netcoreapp3.1\BasicOOP.csproj.GenerateResource.cache
+C:\Users\kdungprasong\source\repos\BasicOOP\BasicOOP\obj\Debug\netcoreapp3.1\BasicOOP.AssemblyInfoInputs.cache
+C:\Users\kdungprasong\source\repos\BasicOOP\BasicOOP\obj\Debug\netcoreapp3.1\BasicOOP.AssemblyInfo.cs
+C:\Users\kdungprasong\source\repos\BasicOOP\BasicOOP\obj\Debug\netcoreapp3.1\BasicOOP.csproj.CoreCompileInputs.cache
+C:\Users\kdungprasong\source\repos\BasicOOP\BasicOOP\obj\Debug\netcoreapp3.1\BasicOOP.dll
+C:\Users\kdungprasong\source\repos\BasicOOP\BasicOOP\obj\Debug\netcoreapp3.1\BasicOOP.pdb
+C:\Users\kdungprasong\source\repos\BasicOOP\BasicOOP\obj\Debug\netcoreapp3.1\BasicOOP.genruntimeconfig.cache
