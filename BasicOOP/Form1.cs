@@ -20,14 +20,12 @@ namespace BasicOOP
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Customers c = new Customers();
-            c.CustomerID = "123";
-            c.CustomerName = "Kraisorn Dunprapsong";
-            c.Address = "45 SaDao";
+            Products p = new Products();
+            String result = p.ProductID + Environment.NewLine +
+                              p.ProductName + Environment.NewLine +
+                              p.ProductPrice.ToString();
 
-            lbID.Text = c.CustomerID;
-            lb_FullName.Text = c.CustomerName;
-            lbAddress.Text = c.Address;
+            MessageBox.Show(result, "ข้อมูลลูกค้า");
 
         }
     }
