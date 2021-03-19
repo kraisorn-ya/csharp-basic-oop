@@ -20,13 +20,17 @@ namespace BasicOOP
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Products p = new Products();
-            String result = p.ProductID + Environment.NewLine +
-                              p.ProductName + Environment.NewLine +
-                              p.ProductPrice.ToString();
+            Customers c = new Customers();
+            c.FullName = "Kraisorn dungprasong";
+            c.Salary = 10000;
+            MessageBox.Show("Type ของออบเจ็กต์ c : " + c.GetType().ToString());
 
-            MessageBox.Show(result, "ข้อมูลลูกค้า");
+            var a = new { FullName = "Kraisorn Dungprasong", Salary = 10000 };
+            MessageBox.Show("Type ของออบเจ็กต์ a : "+ a.GetType().ToString());
 
+            var f = a.FullName;
+            var s = a.Salary;
+            MessageBox.Show("ชื่อ-สกุล : " + f + "เงินเดือน : " + s.ToString());
         }
     }
 }

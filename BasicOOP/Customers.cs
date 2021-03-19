@@ -6,42 +6,31 @@ namespace BasicOOP
 {
     class Customers
     {
-        private string _CustomerID;
-        private string _CustomerName;
-        private string _Address;
+        public string _FullName;
+        public int _Salary;
 
-        public string CustomerID
+
+        public string FullName
         {
             get {
-                return _CustomerID;
+                return _FullName;
             }
             set {
-                _CustomerID = value;
+                _FullName = value;
             }
         }
 
-        public string CustomerName
+        public int Salary
         {
             get
             {
-                return _CustomerName;
+                return _Salary;
             }
             set
             {
-                _CustomerName = value;
-            }
-        }
-
-        public string Address
-        {
-            get
-            {
-                return _Address;
-            }
-            set
-            {
-                _Address = value;
+                _Salary = value;
             }
         }
     }
+    
 }
