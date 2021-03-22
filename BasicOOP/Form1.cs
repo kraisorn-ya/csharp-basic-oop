@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using RoomA;
+using Room.SubB;
 
 namespace BasicOOP
 {
@@ -20,17 +22,18 @@ namespace BasicOOP
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Customers c = new Customers();
-            c.FullName = "Kraisorn dungprasong";
-            c.Salary = 10000;
-            MessageBox.Show("Type ของออบเจ็กต์ c : " + c.GetType().ToString());
+            Products p1 = new Products();
+            p1.ProductID = "001";
+            p1.ProductName = "คู่มือ Visual C# 2015";
+            p1.ProductsSerialNumber = new SerialNumber
+            {
+                FirstString = "aaa",
+                LastNumber = 999
+            };
 
-            var a = new { FullName = "Kraisorn Dungprasong", Salary = 10000 };
-            MessageBox.Show("Type ของออบเจ็กต์ a : "+ a.GetType().ToString());
-
-            var f = a.FullName;
-            var s = a.Salary;
-            MessageBox.Show("ชื่อ-สกุล : " + f + "เงินเดือน : " + s.ToString());
+            string str1 = "สินค้า :" + p1.ProductID + " " + p1.ProductID + Environment.NewLine +
+                "serial Number" + p1.ProductsSerialNumber.FirstString + "-" + p1.ProductsSerialNumber.LastNumber;
+            MessageBox.Show(str1, "สินค้าชิ้นที่ 1 (str1)");
         }
     }
 }

@@ -6,8 +6,10 @@ namespace BasicOOP
 {
     class Products
     {
-        public string ProductID { get; set; } = "001";
-        public string ProductName { get; set; } = "OOP with C#";
-        public double ProductPrice { get; set; } = 345;
+        public string ProductID { get; set; } 
+        public string ProductName { get; set; }
+
+        public SerialNumber ProductsSerialNumber { get; set; }
+        
     }
 }
