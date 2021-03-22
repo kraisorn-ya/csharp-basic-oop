@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SimpleDynamicTipe;
+using System.Collections;
 
 namespace BasicOOP
 {
@@ -21,37 +22,25 @@ namespace BasicOOP
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            absProgrammer p = default(absProgrammer);
-            p = new Programmer();
-            p.Programming();
-
-            p = new SA();
-            p.Programming();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string[] arr = new string[] {"1","2","3" };
+            int[] arr = { 1, 2, 3, 4, 2, 3, 4, 5 };
             string str = "";
-            foreach (string item in arr)
+
+            for (int i=0; i < arr.Length; i++)
             {
-                str = str + item + Environment.NewLine;
+                str = str + arr[i] + " ";
             }
 
-            MessageBox.Show(str, "ผลการอ่านค่าจากตัวแปรอาร์เรย์");
-        }
+            str = str + Environment.NewLine
+            + "----------------------------"
+            + Environment.NewLine;
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            string[] arr = new string[] { "1", "2", "3" };
-            int length = arr.Length - 1; // เพื่อให้ได้ลำดับสุดท้ายมาก่อน
-            string strReverse = "";
-            while (length >=0)
+            int[] arrDis = arr.Distinct().ToArray();
+            for (int i = 0; i < arrDis.Length; i++)
             {
-                strReverse = strReverse + arr[length] + Environment.NewLine;
-                length--;
+                str = str + arrDis[i] + " ";
             }
-            MessageBox.Show(strReverse, "result");
+
+            MessageBox.Show(str, "result");
         }
     }
 }
