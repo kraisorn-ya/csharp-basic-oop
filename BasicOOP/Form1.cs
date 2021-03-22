@@ -18,7 +18,8 @@ namespace BasicOOP
         {
             InitializeComponent();
         }
-
+        int[] arr = { 10,100,20,200,3,40,5,50};
+        string str = "";
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -41,6 +42,50 @@ namespace BasicOOP
             }
 
             MessageBox.Show(str, "result");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            str = "";
+            for (int i = 0; i < arr.Length; i++)
+            { 
+                str = str + arr[i] + " ";
+            }
+            str = str + Environment.NewLine
+                    + "------------------"
+                    + Environment.NewLine;
+            int max = arr[0];
+            for (int j = 1; j < arr.Length; j ++)
+            {
+                if (max <arr[j])
+                {
+                    max = arr[j];
+                }
+            }
+            str = str + max.ToString();
+            MessageBox.Show(str, "result Max");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            str = "";
+            for (int i = 0; i < arr.Length; i++)
+            {
+                str = str + arr[i] + " ";
+            }
+            str = str + Environment.NewLine
+                    + "------------------"
+                    + Environment.NewLine;
+            int min = arr[0];
+            for (int j = 1; j < arr.Length; j++)
+            {
+                if (min > arr[j])
+                {
+                    min = arr[j];
+                }
+            }
+            str = str + min.ToString();
+            MessageBox.Show(str, "result Max");
         }
     }
 }
