@@ -22,7 +22,7 @@ namespace BasicOOP
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Customers myCustomer = new Customers("Kraisorn","Dungprasong");
+            Customers myCustomer = new Customers("Kraisorn","Dungprasong"); // อาศัยฟีเจอร์ object Initializer เพื่อกำหนดค่าเริ่มต้นให้กับออบเจ็กต์ที่สร้างขึ้นมา
             string result = "";
             result = "ฟิลด์ _FirstName : " + myCustomer.FirstName + Environment.NewLine;
             result += "ฟิลด์ _LastName : " + myCustomer.LastName;
