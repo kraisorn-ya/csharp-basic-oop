@@ -6,31 +6,26 @@ namespace BasicOOP
 {
     class Customers
     {
-        public string _FullName;
-        public int _Salary;
-
-
-        public string FullName
+        string _FirstName;
+        string _LastName;
+        public Customers()
+        { 
+        }
+        public Customers(string FirstName, string LastName)
         {
-            get {
-                return _FullName;
-            }
-            set {
-                _FullName = value;
-            }
+            this._FirstName = FirstName;
+            this._LastName = LastName;
         }
 
-        public int Salary
+        public string FirstName
         {
-            get
-            {
-                return _Salary;
-            }
-            set
-            {
-                _Salary = value;
-            }
+            get { return _FirstName; }
+            set { _FirstName = value; }
+        }
+        public string LastName
+        {
+            get { return _LastName; }
+            set { _LastName = value; }
         }
     }
-    
 }
