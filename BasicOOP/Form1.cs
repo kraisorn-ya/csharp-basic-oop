@@ -28,5 +28,30 @@ namespace BasicOOP
             p = new SA();
             p.Programming();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string[] arr = new string[] {"1","2","3" };
+            string str = "";
+            foreach (string item in arr)
+            {
+                str = str + item + Environment.NewLine;
+            }
+
+            MessageBox.Show(str, "ผลการอ่านค่าจากตัวแปรอาร์เรย์");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string[] arr = new string[] { "1", "2", "3" };
+            int length = arr.Length - 1; // เพื่อให้ได้ลำดับสุดท้ายมาก่อน
+            string strReverse = "";
+            while (length >=0)
+            {
+                strReverse = strReverse + arr[length] + Environment.NewLine;
+                length--;
+            }
+            MessageBox.Show(strReverse, "result");
+        }
     }
 }
