@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using RoomA;
 using Room.SubB;
+using AbstractClass;
 
 namespace BasicOOP
 {
@@ -22,12 +23,19 @@ namespace BasicOOP
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Customers myCustomer = new Customers("Kraisorn","Dungprasong"); // อาศัยฟีเจอร์ object Initializer เพื่อกำหนดค่าเริ่มต้นให้กับออบเจ็กต์ที่สร้างขึ้นมา
-            string result = "";
-            result = "ฟิลด์ _FirstName : " + myCustomer.FirstName + Environment.NewLine;
-            result += "ฟิลด์ _LastName : " + myCustomer.LastName;
+            double result = 0.0;
+            Calculator c = new Calculator();
+            result = c.Add(5,10);
+            MessageBox.Show(result.ToString(), "ผลบวก");
 
-            MessageBox.Show(result, "ผลการทำงาน");
+            result = c.Subtract(10, 3);
+            MessageBox.Show(result.ToString(), "ผลลบ");
+
+            result = c.Multiply(2, 3);
+            MessageBox.Show(result.ToString(), "ผลคูณ");
+
+            result = c.Divide(4, 2);
+            MessageBox.Show(result.ToString(), "ผลหาร");
         }
     }
 }
