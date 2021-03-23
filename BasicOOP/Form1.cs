@@ -22,15 +22,35 @@ namespace BasicOOP
  
         private void Form1_Load(object sender, EventArgs e)
         {
-            Products<int> p1 = new Products<int>();
-            p1.ProductID = "001";
-            p1.ProductName = "พื้นฐาน Visual Basic";
-            p1.ProductPrice = 345;
+            Queue<string> q = new Queue<string>();
+            q.Enqueue("1.Visual C#");
+            q.Enqueue("2.Visual Basic");
+            q.Enqueue("3.Swift");
+            q.Enqueue("4.JAVA");
+            q.Enqueue("5.HTML5");
 
-            Products<double> p2 = new Products<double>();
-            p2.ProductID = "002";
-            p2.ProductName = "พื้นฐาน Visual Basic";
-            p2.ProductPrice = 379.5;
+            string stritems = ShowData(q);
+            MessageBox.Show(stritems, "ข้อมูลใน Queue");
+
+            q.Peek();
+            stritems = ShowData(q);
+            MessageBox.Show(stritems," ข้อมูลใน Queue หลังจาก Peek");
+
+            q.Dequeue();
+            stritems = ShowData(q);
+            MessageBox.Show(stritems, " ข้อมูลใน Queue หลังจาก Dequeue");
+        }
+
+        public string ShowData(IEnumerable ie)
+        {
+            string str = "";
+            IEnumerator item = ie.GetEnumerator();
+
+            while (item.MoveNext())
+            {
+                str = str + item.Current.ToString() + Environment.NewLine;
+            }
+            return str;
         }
     }
 }

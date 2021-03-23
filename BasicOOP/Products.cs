@@ -4,12 +4,27 @@ using System.Text;
 
 namespace BasicOOP
 {
-    class Products
+    class Products<T>
     {
-        public string ProductID { get; set; } 
-        public string ProductName { get; set; }
+        private string _ProductID;
+        private string _ProductName;
 
-        public SerialNumber ProductsSerialNumber { get; set; }
-        
+        private T _ProductPrice;
+        public string ProductID
+        {
+            get { return _ProductID; }
+            set { _ProductID = value; }
+        }
+        public string ProductName
+        {
+            get { return _ProductName; }
+            set { _ProductName = value; }
+        }
+        public T ProductPrice
+        {
+            get { return _ProductPrice; }
+            set { _ProductPrice = value; }
+        }
+
     }
 }
